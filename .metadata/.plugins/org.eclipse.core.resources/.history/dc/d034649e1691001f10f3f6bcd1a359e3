@@ -1,0 +1,11 @@
+
+public class Progettino {
+	public static void main(String[] args) {
+		*Computer coms;
+		
+		for(int i=0; i<10; i++) {
+			Computer c = new Computer("ab");
+			System.out.println(c)
+		}
+	}
+}
