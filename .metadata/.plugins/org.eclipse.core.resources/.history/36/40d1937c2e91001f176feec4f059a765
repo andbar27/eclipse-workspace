@@ -38,18 +38,18 @@ public class Main {
 		
 		
 		for(int i = 1; i < 100; i++) {
-			System.out.println(fattoriale(i) + " - " + fattoriale2(i));
+			System.out.println(fattoriale(i) - fattoriale2(i));
 		}
 		
 	}
 	
 	public static int fattoriale(int n) {
-		return (n + 1) * n / 2 +1;
+		return (n + 1) * n / 2;
 	}
 	public static int fattoriale2(int n) {
 		int fatt = 1;
-		for(int i=n; i>=1; i--) {
-			fatt += i;
+		for(int i=n; i>1; i--) {
+			fatt *= i;
 		}
 		return fatt;
 	}
